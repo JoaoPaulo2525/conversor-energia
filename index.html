@@ -1,14 +1,45 @@
-<input type="number" id="valor">
-<select id="unidadeDe">
-  <option value="joule">Joule</option>
-  <option value="caloria">Caloria</option>
-  <option value="kwh">kWh</option>
-  <option value="btu">BTU</option>
-</select>
-<select id="unidadePara">
-  <!-- mesmas opções -->
-</select>
-<button id="converter">Converter</button>
-<p id="resultado"></p>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Energia</title>
+    </head>
+<body>
 
-<script src="script.js"></script>
+    <h1>Conversor de Unidades de Energia</h1>
+
+    <label for="valor">Valor a converter:</label>
+    <input type="number" id="valor" placeholder="Insira o valor">
+    
+    <br><br>
+
+    <label for="unidadeDe">Converter **DE**:</label>
+    <select id="unidadeDe">
+        <option value="joule">Joule</option>
+        <option value="caloria">Caloria</option>
+        <option value="kwh">kWh</option>
+        <option value="btu">BTU</option>
+    </select>
+
+    <br><br>
+
+    <label for="unidadePara">Converter **PARA**:</label>
+    <select id="unidadePara">
+        <option value="joule">Joule</option>
+        <option value="caloria">Caloria</option>
+        <option value="kwh">kWh</option>
+        <option value="btu">BTU</option>
+    </select>
+
+    <br><br>
+
+    <button id="converter">Converter</button>
+
+    <br><br>
+
+    <p id="resultado">O resultado da conversão aparecerá aqui.</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
